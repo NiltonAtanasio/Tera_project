@@ -57,20 +57,59 @@ main div h1, main div h2 {
   padding: 0 15px;
 }
 
-#card-about {
-  height: 30vh;
+#container-about {
+  height: 40vh;
   background-color: rgb(246, 246, 246);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
+  align-content: center;
 }
 
-#card-about div {
-  height: 15vh;
-  width: 15vw;
+.card-about {
+  height: 25vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.line {
+  width: 8vw;
+  border: 1px solid black;
+}
+
+.about {
+  height: 18vh;
+  width: 14vw;
   padding: 10px;
   text-align: center;
-  background-color: aquamarine;
-  border-top: 2px solid black;
+  box-shadow: 0px 0px 5px ;
+}
+
+#container-platform {
+  height: 60vh;
+  display: flex;
+}
+
+#plataform-text {
+  width: 50vw;
+}
+
+#plataform-icons {
+  width: 50vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
   
+}
+
+#plataform-icons div {
+  width: 12vw;
+  height: 20vh;
+  background-color: brown;
+  margin: 1rem 1rem;
 }
