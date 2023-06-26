@@ -113,3 +113,14 @@ main div h1, main div h2 {
   background-color: brown;
   margin: 1rem 1rem;
 }
+
+#plataform-text {
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+#plataform-text h2{
+  margin: 1rem auto 2rem;
+  font-weight: bolder;
+}
+
