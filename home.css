@@ -124,3 +124,22 @@ main div h1, main div h2 {
   font-weight: bolder;
 }
 
+#container-question {
+  height: 30vh;
+  padding: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#container-question ul {
+  list-style: none;
+  text-align: left;
+  padding: 1rem 5rem;
+}
+
+#container-question ul li {
+  border-bottom: 1px solid black;
+}
+
+
+
