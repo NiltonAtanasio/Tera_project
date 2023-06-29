@@ -3,6 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 header {
@@ -78,7 +95,7 @@ main div h1, main div h2 {
 
 .line {
   width: 8vw;
-  border: 1px solid black;
+  box-shadow: 0px 0px 2px 1px black;
 }
 
 .about {
@@ -86,7 +103,7 @@ main div h1, main div h2 {
   width: 14vw;
   padding: 10px;
   text-align: center;
-  box-shadow: 0px 0px 5px ;
+  box-shadow: 0px 0px 4px 1px black;
 }
 
 #container-platform {
@@ -110,7 +127,7 @@ main div h1, main div h2 {
 #plataform-icons div {
   width: 12vw;
   height: 20vh;
-  background-color: brown;
+  box-shadow: 0px 0px 4px 1px black;
   margin: 1rem 1rem;
 }
 
