@@ -24,12 +24,16 @@ h4 {
   font-size: 1rem;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 /* Nav */
 
 header {
   background-color: rgb(246, 246, 246);
   height: 10vh;
-  padding: 0 20px;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +46,7 @@ header div {
 }
 
 button {
-  width: 9vw;
+  width: 8vw;
   height: 7vh;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -67,7 +71,8 @@ main div {
   text-align: center;
 }
 
-#main-form p,#main-form input {
+#main-form p,
+#main-form input {
   margin-bottom: 10px;
 }
 
@@ -78,6 +83,10 @@ main div {
   width: 35vw;
   padding: 0 15px;
   background-color: rgb(238, 238, 238);
+}
+
+#main-form button {
+  width: 11vw;
 }
 
 /* About content */
@@ -107,7 +116,7 @@ main div {
 }
 
 .about {
-  height: 20vh;
+  height: 25vh;
   width: 14vw;
   padding: 10px;
   display: flex;
@@ -121,7 +130,7 @@ main div {
   height: 75vh;
   display: flex;
   flex-direction: row;
-  background-color: rgb(246, 246, 246);;
+  background-color: rgb(246, 246, 246);
 }
 
 #plataform-text {
@@ -137,22 +146,21 @@ main div {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: center;
-  
 }
 
 #plataform-icons div {
   width: 12vw;
-  height: 20vh;
+  height: 25vh;
   box-shadow: 0px 0px 4px 1px black;
   margin: 1rem 1rem;
 }
 
 #plataform-text {
-  padding: 3rem 5rem;
+  padding: 3rem 4rem;
   text-align: center;
 }
 
-#plataform-text h2{
+#plataform-text h2 {
   margin: 1rem auto 2rem;
   font-weight: bolder;
 }
@@ -201,4 +209,136 @@ footer {
   height: 2rem;
   width: 2rem;
   background-color: rgb(255, 255, 255);
+}
+
+/* Reponsividade */
+
+@media (max-width: 820px) {
+  /* Font */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Nav */
+  header button {
+    width: 10vw;
+  }
+
+  /* Main content */
+  main div {
+    width: 52vw;
+  }
+
+  #main-form input {
+    width: 42vw;
+  }
+
+  #main-form button {
+    width: 14vw;
+  }
+
+  /* About content */
+  #container-about {
+    height: 45vh;
+  }
+
+  .about {
+    height: 22vh;
+    width: 16vw;
+  }
+
+  /* Plataform content */
+  #plataform-icons div {
+    width: 10vw;
+    height: 16vh;
+  }
+
+  #plataform-text {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
+  #plataform-text h2 {
+    margin: 1rem auto 2rem;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 660px) {
+  /* Nav */
+  header {
+    padding: 0 2.5rem;
+  }
+
+  header button {
+    width: 14vw;
+  }
+
+  /* Main content */
+  #main-form input {
+    width: 50vw;
+  }
+
+  #main-form button {
+    width: 18vw;
+  }
+
+  /* About content */
+  #container-about {
+    height: 80vh;
+  }
+
+  .card-about {
+    height: 40vh;
+    width: 40vw;
+  }
+
+  .about {
+    height: 24vh;
+    width: 24vw;
+  }
+
+  .line {
+    width: 15vw;
+  }
+
+  /* Plataform content */
+  #container-platform {
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #plataform-text {
+    width: 70vw;
+  }
+
+  #plataform-text {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+  }
+
+  #plataform-text h2 {
+    margin: 0 0 0.2rem;
+  }
+
+  #plataform-icons {
+    width: 70vw;
+  }
+
+  #plataform-icons div {
+    width: 18vw;
+    height: 20vh;
+    box-shadow: 0px 0px 4px 1px black;
+    margin: 0.7rem 0;
+  }
 }
