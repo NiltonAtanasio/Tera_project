@@ -68,3 +68,21 @@ nav {
   width: 50%;
   height: 10%;
 }
+
+/* container-carousel */
+#container-carousel {
+  width: 92vw;
+  height: 30vh;
+  background-color: rgb(211, 211, 211);
+  margin-left: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#container-carousel div {
+  background-color: rgb(237, 237, 237);
+  height: 80%;
+  width: 10%;
+}
