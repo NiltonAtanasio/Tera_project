@@ -104,4 +104,57 @@ main {
   width: 90%;
   height: 60vh;
   background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Post Content*/
+/* post header */
+.post-header {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.post-info-user {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.post-placeholder {
+  background-color: aliceblue;
+  width: 30%;
+  height: 85%;
+  border-radius: 50%;
+}
+
+.post-estrelas {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.post-movie-name {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+/* post main */
+.post-main {
+  background-color: brown;
+  width: 100%;
+  height: 60%;
+}
+
+/* post footer */
+.post-footer {
+  background-color: blue;
+  width: 100%;
+  height: 15%;
 }
