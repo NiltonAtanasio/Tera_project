@@ -25,7 +25,7 @@ h4 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Aside Menu */
@@ -96,7 +96,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
   background-color: rgb(195, 195, 195);
 }
 
@@ -112,7 +112,7 @@ main {
 /* post header */
 .post-header {
   width: 100%;
-  height: 25%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -122,13 +122,14 @@ main {
   width: 30%;
   height: 100%;
   display: flex;
+  gap: 0.5rem;
   align-items: center;
 }
 
 .post-placeholder {
-  background-color: aliceblue;
-  width: 30%;
-  height: 85%;
+  background-color: rgb(255, 255, 255);
+  width: 21%;
+  height: 75%;
   border-radius: 50%;
 }
 
@@ -140,21 +141,66 @@ main {
 }
 
 .post-movie-name {
-  width: 30%;
+  width: 15%;
   height: 100%;
-  text-align: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 /* post main */
 .post-main {
-  background-color: brown;
   width: 100%;
-  height: 60%;
+  height: 62%;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.post-main-text {
+  height: 100%;
+  width: 75%;
+  text-align: justify;
+}
+
+.post-main-card {
+  height: 100%;
+  width: 16%;
+  background-color: rgb(255, 255, 255);
 }
 
 /* post footer */
 .post-footer {
-  background-color: blue;
   width: 100%;
-  height: 15%;
+  height: 18%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.post-footer p {
+  font-size: 0.8rem;
+}
+
+.post-footer-container {
+  height: 100%;
+  width: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.post-footer-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 0.2rem;
+}
+.post-footer-icons {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgb(255, 255, 255);
 }
