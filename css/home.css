@@ -65,6 +65,7 @@ header div {
 button {
   width: 8vw;
   height: 6vh;
+  max-width: 115px;
   border-radius: 50px;
   border-color: var(--tertiary-color);
   font-size: 0.9rem;
@@ -110,19 +111,20 @@ main div {
 }
 
 #main-form {
-  height: 30%;
+  height: 40%;
 }
 #main-form input {
   border-radius: 50px;
   border: none;
-  height: 30%;
+  height: 25%;
   width: 100%;
   padding: 0 15px;
   background: var(--tertiary-color);
 }
 
 #main-form button {
-  width: 11vw;
+  width: 12vw;
+  height: 25%;
   background: var(--tertiary-color);
 }
 
@@ -130,6 +132,8 @@ main div {
 
 #container-about {
   height: 40vh;
+  margin: 0 auto;
+  max-width: 1100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -140,6 +144,7 @@ main div {
 .card-about {
   height: 30vh;
   width: 20vw;
+  max-width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,10 +171,12 @@ main div {
   height: 75vh;
   display: flex;
   flex-direction: row;
+  padding: auto;
 }
 
 #plataform-text {
   width: 50vw;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,6 +189,7 @@ main div {
 
 #plataform-icons {
   width: 50vw;
+  max-width: 650px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -190,7 +198,8 @@ main div {
 
 #plataform-icons div {
   width: 12vw;
-  height: 25vh;
+  height: 23vh;
+  max-width: 150px;
   background: var(--tertiary-color);
   margin: 1rem 1rem;
   box-shadow: 0px 0px 40px var(--quartenary-color);
@@ -221,6 +230,8 @@ main div {
   list-style: none;
   text-align: left;
   padding: 1rem 5rem;
+  margin: auto;
+  max-width: 1000px;
 }
 
 #container-question ul li {
@@ -255,6 +266,13 @@ footer {
 }
 
 /* Reponsividade */
+
+@media (max-width: 1100px) {
+  #plataform-icons div {
+    height: 20vh;
+    margin: 1rem 0.5rem;
+  }
+}
 
 @media (max-width: 820px) {
   /* Font */
@@ -304,7 +322,7 @@ footer {
 
   /* Plataform content */
   #plataform-icons div {
-    width: 10vw;
+    width: 12vw;
     height: 16vh;
   }
 
@@ -314,7 +332,7 @@ footer {
   }
 
   #plataform-text h2 {
-    margin: 1rem auto 2rem;
+    margin: 0rem auto 1rem;
     font-weight: bolder;
   }
 }
@@ -366,7 +384,7 @@ footer {
     height: 80vh;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   #plataform-text {
@@ -384,13 +402,11 @@ footer {
 
   #plataform-icons {
     width: 70vw;
+    gap: 1rem;
   }
 
   #plataform-icons div {
-    width: 18vw;
-    height: 20vh;
-    box-shadow: 0px 0px 4px 1px black;
-    margin: 0.7rem 0;
+    width: 16vw;
   }
 }
 
@@ -461,7 +477,6 @@ footer {
     height: 4.5vh;
     width: 90%;
     padding: 0 15px;
-    background-color: rgb(238, 238, 238);
   }
 
   #main-form button {
@@ -489,8 +504,7 @@ footer {
   }
 
   .line {
-    width: 70%;
-    box-shadow: 0px 0px 2px 1px black;
+    width: 40%;
   }
 
   .about {
@@ -499,7 +513,6 @@ footer {
     padding: 0.5rem;
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 4px 1px black;
   }
 
   /* Plataform content */
@@ -532,7 +545,6 @@ footer {
   #plataform-icons div {
     width: 25%;
     height: 35%;
-    box-shadow: 0px 0px 4px 1px black;
     margin: 0.7rem 0;
   }
 
