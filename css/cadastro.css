@@ -44,6 +44,8 @@ h1 {
       var(--primary-color)
     );
     color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
   }
 
   /* Nav */
