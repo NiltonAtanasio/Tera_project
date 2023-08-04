@@ -19,17 +19,17 @@
     <main>
         <div class="main-register" >
             <h2>Cadastro</h2>
-            <form onsubmit="return validarFormuario()">
-                <label for="">Nome:</label>
+            <form onsubmit="return validarFormuario()" id="meuFormulario">
+                <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" required>
 
-                <label for="">Email:</label>
+                <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
 
-                <label for="">Senha:</label>
+                <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="senha" required>
 
-                <label for="">Confirmar Senha:</label>
+                <label for="confirmar-senha">Confirmar Senha:</label>
                 <input type="password" name="confirmar-senha" id="confirmar-senha" required>
 
                 <input type="submit" value="Cadastrar">
