@@ -28,7 +28,13 @@ function validarFormulario() {
     alert("As senhas não coincidem.");
     return false;
   }
-  
+
+  /* Verificação de caracteres da senha */
+if (senha.length < 8) {
+  alert("Sua senha precisa ter ao menos 8 caracteres.")
+  return false
+}
+
   alert("Cadastro realizado com sucesso");
   return true;
 }
