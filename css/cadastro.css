@@ -145,7 +145,7 @@ footer {
   
   #footer-link a {
     margin: auto 1rem;
-    color: var(--fifth-color);
+    color: #fff;
   }
   
   #footer-icons {
@@ -158,3 +158,75 @@ footer {
     width: 2rem;
     background-color: var(--tertiary-color);
   }
+
+  /*RESPONSIVIDADE*/
+
+  @media screen and (min-width: 1200px){
+    
+  }
+
+  @media screen and (min-width:992px) and (max-width: 1199px) {
+    
+  }
+
+  @media screen and (min-width:768px) and (max-width: 991px) {
+    
+  }
+
+  @media screen and (min-width:576px) and (max-width: 767px) {
+    
+  button{
+    width: 14vw;
+    font-size: 0.8rem;
+  }
+
+  .main-register{
+    max-width: 75%;
+    max-height:60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-register h2{
+    font-size: 1.5rem;
+  }
+
+  .main-register label, input{
+    width: 90%;
+    height: 2.5rem;
+    font-size: 18px;
+  }
+
+  #footer-link a {
+    font-size: 0.7rem;
+    color: #fff;
+}
+  }
+
+  @media screen and (max-width: 575px) {
+    
+  }
+
+/* @media screen and (max-width:768px){
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
+/* @media screen and (max-width: 360px){
+  .main-register{
+    max-width: 85%;
+  }
+
+  .main-register input[type="submit"]{
+    margin-top: 1.5vh;
+  }
+
+  #footer-link a {
+    font-size: 0.6rem;
+    color: #fff;
+}
+} */
