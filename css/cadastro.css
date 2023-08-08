@@ -53,7 +53,7 @@ h1 {
   header {
     background-color: var(--tertiary-color);
     height: 10vh;
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,7 +84,6 @@ h1 {
   }
 
   main{
-
     height: 80vh;
   }
 
@@ -162,15 +161,69 @@ footer {
   /*RESPONSIVIDADE*/
 
   @media screen and (min-width: 1200px){
-    
+
+    header{
+      padding: 0 8vw;
+    }
+   
+    button{
+      width: 15vw;
+      font-size: 2.2rem;
+    }
+
+    .main-register{
+      width: 75vw;
+    }
   }
 
   @media screen and (min-width:992px) and (max-width: 1199px) {
     
+    header{
+      padding: 0 8vw;
+    }
+
+    button{
+      width: 15vw;
+      font-size: 1.9rem;
+    }
+    
+    .main-register{
+      width: 80vw;
+    }
   }
 
   @media screen and (min-width:768px) and (max-width: 991px) {
+   
+    header{
+      padding: 0 7vw;
+    }
     
+    button{
+      width: 15vw;
+      font-size: 1.7rem;
+    }
+
+    .main-register{
+      width: 85vw;
+      max-height: 70%;
+    }
+  }
+
+  .main-register h2{
+    font-size: 3rem;
+  }
+
+  .main-register label, input {
+    margin-top: 4%;
+    font-size: 2.2rem;
+  }
+
+  .main-register input{
+    height: 5vh;
+  }
+
+  #footer-link a {
+    font-size: 2rem;
   }
 
   @media screen and (min-width:576px) and (max-width: 767px) {
@@ -200,33 +253,39 @@ footer {
 
   #footer-link a {
     font-size: 0.7rem;
-    color: #fff;
-}
+  }
   }
 
   @media screen and (max-width: 575px) {
-    
+
+    button {
+      width: 15vw ;
+      font-size: 0.9rem;
+    }
+
+    .main-register{
+      max-width: 85%;
+    }
+
+    .main-register h2{
+      font-size: 1.5rem ;
+    }
+  
+    .main-register label, input {
+      font-size: 1.2rem;
+    }
+
+    .main-register input[type="submit"]{
+      margin-top: 3vh;
+    }
+  
+    #footer-link a {
+      font-size: 0.7rem;
+  }
   }
 
-/* @media screen and (max-width:768px){
-  header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-} */
-
-/* @media screen and (max-width: 360px){
-  .main-register{
-    max-width: 85%;
-  }
-
-  .main-register input[type="submit"]{
-    margin-top: 1.5vh;
-  }
-
-  #footer-link a {
-    font-size: 0.6rem;
-    color: #fff;
+    @media screen and (max-width: 360px){
+      #footer-link a {
+        font-size: 0.6rem;
+    }
 }
-} */
