@@ -204,3 +204,128 @@ main {
   width: 1.5rem;
   background-color: rgb(255, 255, 255);
 }
+
+@media (max-width: 900px) {
+  /* Nav */
+  #nav-placeholder div {
+    height: 40%;
+  }
+
+  #nav-icons div {
+    height: 8%;
+  }
+
+  #nav-icons {
+    gap: 1.2rem;
+  }
+
+  /* main post */
+
+  .main-post {
+    width: 98%;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 785px) {
+  /* Font */
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* Nav */
+  #nav-placeholder div {
+    height: 35%;
+  }
+
+  #nav-icons div {
+    height: 7%;
+  }
+
+  #nav-icons {
+    gap: 1.4rem;
+  }
+  /* carousel */
+  #container-carousel {
+    width: 97.4vw;
+    gap: 1.5rem;
+  }
+
+  #container-carousel div {
+    height: 80%;
+    width: 11%;
+  }
+
+  /* main post */
+  main {
+    padding: 2rem;
+  }
+
+  .main-post {
+    width: 99%;
+    height: 55vh;
+  }
+  .post-info-user {
+    width: 35%;
+  }
+
+  .post-placeholder {
+    height: 65%;
+  }
+
+  .post-movie-name {
+    width: 23%;
+  }
+
+  /* post main */
+  .post-main-card {
+    height: 95%;
+    width: 18%;
+  }
+}
+
+@media (max-width: 650px) {
+  /* esconder o nav */
+  nav {
+    display: relative;
+    visibility: hidden;
+  }
+
+  main {
+    width: 97.4vw;
+    margin: 0;
+    padding: 2rem 0 0 0;
+  }
+
+  .main-post {
+    width: 90%;
+  }
+
+  #container-carousel {
+    width: 97.4vw;
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  #container-carousel div {
+    height: 80%;
+    width: 12%;
+  }
+}
