@@ -316,6 +316,16 @@ main {
 
   .main-post {
     width: 90%;
+    height: 61vh;
+  }
+
+  .post-main {
+    height: auto;
+  }
+
+  .post-main-card {
+    height: 95%;
+    width: 20%;
   }
 
   #container-carousel {
@@ -327,5 +337,12 @@ main {
   #container-carousel div {
     height: 80%;
     width: 12%;
+  }
+}
+
+@media (max-width: 550px) {
+  .post-main-card {
+    height: 88%;
+    width: 22%;
   }
 }
