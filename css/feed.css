@@ -37,9 +37,9 @@ p {
 /* Aside Menu */
 nav {
   height: 100vh;
-  width: 8vw;
+  width: 7vw;
+  max-width: 70px;
   background-color: rgb(237, 237, 237);
-  margin: 0;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -55,8 +55,8 @@ nav {
 
 #nav-placeholder div {
   background-color: rgb(255, 255, 255);
-  width: 60%;
-  height: 50%;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 #nav-icons {
@@ -71,16 +71,15 @@ nav {
 
 #nav-icons div {
   background-color: rgb(255, 255, 255);
-  width: 50%;
-  height: 10%;
+  width: 30px;
+  height: 30px;
 }
 
 /* container-carousel */
 #container-carousel {
-  width: 90.4vw;
   height: 30vh;
+  padding: 0 1rem 0 4.5rem;
   background-color: rgb(211, 211, 211);
-  margin-left: 8vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,16 +88,15 @@ nav {
 
 #container-carousel div {
   background-color: rgb(237, 237, 237);
-  height: 80%;
-  width: 10%;
+  height: 140px;
+  width: 100px;
 }
 
 /* Main */
 main {
-  width: 90.4vw;
-  margin-left: 8vw;
   height: auto;
-  padding: 3rem;
+  margin: 0 auto;
+  padding: 3rem 0 3rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,7 +106,8 @@ main {
 
 .main-post {
   width: 90%;
-  height: 60vh;
+  max-width: 800px;
+  min-height: 60vh;
   background-color: rgb(237, 237, 237);
   display: flex;
   flex-direction: column;
@@ -121,11 +120,12 @@ main {
   height: 20%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
 }
 
 .post-info-user {
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   gap: 0.5rem;
@@ -134,30 +134,22 @@ main {
 
 .post-placeholder {
   background-color: rgb(255, 255, 255);
-  width: 21%;
-  height: 75%;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
 .post-estrelas {
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.post-movie-name {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-}
-
 /* post main */
 .post-main {
   width: 100%;
-  height: 62%;
+  height: auto;
   padding: 0.7rem 1rem;
   display: flex;
   flex-flow: row;
@@ -166,27 +158,34 @@ main {
 
 .post-main-text {
   height: 100%;
-  width: 75%;
+  width: 80%;
+  padding-right: 1rem;
   text-align: justify;
 }
 
 .post-main-card {
   height: 100%;
-  width: 16%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-main-card div {
+  height: 160px;
+  width: 120px;
   background-color: rgb(255, 255, 255);
 }
 
 /* post footer */
 .post-footer {
   width: 100%;
-  height: 18%;
+  min-height: 18%;
+  height: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-}
-
-.post-footer p {
-  font-size: 0.8rem;
 }
 
 .post-footer-container {
@@ -206,36 +205,13 @@ main {
   gap: 0.2rem;
 }
 .post-footer-icons {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 25px;
+  width: 25px;
   background-color: rgb(255, 255, 255);
 }
 
-@media (max-width: 900px) {
-  /* Nav */
-  #nav-placeholder div {
-    height: 40%;
-  }
-
-  #nav-icons div {
-    height: 8%;
-  }
-
-  #nav-icons {
-    gap: 1.2rem;
-  }
-
-  /* main post */
-
-  .main-post {
-    width: 98%;
-    padding: 0 0;
-  }
-}
-
-@media (max-width: 785px) {
+@media (max-width: 780px) {
   /* Font */
-
   h1 {
     font-size: 2.5rem;
   }
@@ -258,55 +234,33 @@ main {
 
   /* Nav */
   #nav-placeholder div {
-    height: 35%;
+    width: 35px;
+    height: 35px;
   }
 
   #nav-icons div {
-    height: 7%;
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
   }
 
-  #nav-icons {
-    gap: 1.4rem;
-  }
-  /* carousel */
+  /* container-carousel */
   #container-carousel {
-    width: 97.4vw;
-    gap: 1.5rem;
+    height: 20vh;
+    gap: 1rem;
   }
 
   #container-carousel div {
-    height: 80%;
-    width: 11%;
+    background-color: rgb(237, 237, 237);
+    height: 100px;
+    width: 70px;
   }
 
-  /* main post */
+  /* Main */
   main {
-    padding: 2rem;
-  }
-
-  .main-post {
-    width: 99%;
-    height: 55vh;
-  }
-  .post-info-user {
-    width: 35%;
-  }
-
-  .post-placeholder {
-    height: 65%;
-  }
-
-  .post-movie-name {
-    width: 23%;
-  }
-
-  /* post main */
-  .post-main-card {
-    height: 95%;
-    width: 18%;
+    padding: 3rem 0 0 3rem;
   }
 }
-
 @media (max-width: 650px) {
   /* esconder o nav */
   nav {
@@ -315,7 +269,7 @@ main {
     top: 0;
     z-index: 9998;
     width: 11vw;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   /* aparecer bars */
@@ -334,41 +288,89 @@ main {
     left: 0;
   }
 
+  /* Carousel */
+  #container-carousel {
+    padding: 0 1rem;
+  }
+
+  /* Main */
   main {
-    width: 97.4vw;
-    margin: 0;
-    padding: 2rem 0 0 0;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .main-post {
-    width: 90%;
-    height: 61vh;
+    width: 95%;
+  }
+
+  .post-placeholder {
+    width: 35px;
+    height: 35px;
+  }
+
+  .post-main-card div {
+    height: 140px;
+    width: 100px;
+  }
+
+  .post-footer-icons {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media (max-width: 550px) {
+  /* Font */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 
   .post-main {
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .post-main-text {
     height: auto;
+    width: 100%;
+    padding: 0rem;
+    text-align: justify;
   }
 
   .post-main-card {
-    height: 95%;
-    width: 20%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
-  #container-carousel {
-    width: 97.4vw;
-    margin: 0;
-    gap: 1.5rem;
+  .post-main-card div {
+    height: 160px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
   }
 
-  #container-carousel div {
-    height: 80%;
-    width: 12%;
-  }
-}
-
-@media (max-width: 550px) {
-  .post-main-card {
-    height: 88%;
-    width: 22%;
+  .footer-icons {
+    visibility: hidden;
   }
 }
