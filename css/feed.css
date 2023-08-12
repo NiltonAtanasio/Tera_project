@@ -27,6 +27,12 @@ h4 {
 p {
   font-size: 1rem;
 }
+/* Bars and x*/
+.fa-solid {
+  position: fixed;
+  left: -50%;
+  z-index: 9999;
+}
 
 /* Aside Menu */
 nav {
@@ -304,8 +310,28 @@ main {
 @media (max-width: 650px) {
   /* esconder o nav */
   nav {
-    display: relative;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 9998;
+    width: 11vw;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* aparecer bars */
+  .bars {
+    left: 1%;
+    top: 1%;
+  }
+
+  .x {
+    left: 4.5%;
+    top: 1%;
     visibility: hidden;
+  }
+
+  nav[data-aberto="aberto"] {
+    left: 0;
   }
 
   main {
