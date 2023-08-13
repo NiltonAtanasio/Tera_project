@@ -210,6 +210,11 @@ main {
   background-color: rgb(255, 255, 255);
 }
 
+/* escondendo icon */
+.fa-ellipsis-vertical {
+  visibility: hidden;
+}
+
 @media (max-width: 780px) {
   /* Font */
   h1 {
@@ -320,15 +325,15 @@ main {
 @media (max-width: 550px) {
   /* Font */
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 12rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   h4 {
@@ -336,7 +341,7 @@ main {
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .post-main {
@@ -352,6 +357,10 @@ main {
     width: 100%;
     padding: 0rem;
     text-align: justify;
+  }
+
+  .post-main-text p {
+    font-size: 0.9rem;
   }
 
   .post-main-card {
@@ -370,7 +379,14 @@ main {
     background-color: rgb(255, 255, 255);
   }
 
+  .post-footer {
+    padding: 0.5rem 1rem;
+  }
+  .post-footer-container {
+    gap: 1rem;
+    padding: 0;
+  }
   .footer-icons {
-    visibility: hidden;
+    gap: 0.5rem;
   }
 }
