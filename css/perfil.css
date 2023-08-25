@@ -1,0 +1,64 @@
+ /* Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+
+  /* Font */
+
+h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1rem;
+  }
+  
+  :root {
+    --primary-color: #030328;
+    --secondary-color: #320940;
+    --tertiary-color: #c7c7c726;
+    --quartenary-color: #9a32bd;
+    --fifth-color: #4646cc;
+  }
+  
+  body {
+    background: linear-gradient(
+      180deg,
+      var(--primary-color),
+      var(--secondary-color) 40% 60%,
+      var(--primary-color)
+    );
+    color: #ffffff;
+    height: 100vh;
+  }
+
+  /* Nav */
+  
+  header {
+    background-color: var(--tertiary-color);
+    height: 7vh;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 7vw;
+    height: 5vh;
+    border-radius: 50%;
+  }
