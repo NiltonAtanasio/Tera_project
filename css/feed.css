@@ -305,14 +305,14 @@ main {
   }
 
   .x {
-    left: 4.5%;
+    left: 4%;
     top: 1%;
     visibility: hidden;
   }
 
   nav[data-aberto="aberto"] {
     left: 0;
-    background-color: #000000;
+    background-color: var(--black);
   }
 
   /* Carousel */
