@@ -8,7 +8,7 @@ export default function Home() {
         <div>
           <h3>Logo</h3>
         </div>
-        <div>
+        <div className="headerBtn">
           <button>Entrar</button>
         </div>
       </header>

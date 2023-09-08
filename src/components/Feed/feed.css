@@ -40,10 +40,10 @@ p {
   font-size: 1rem;
 }
 /* Bars and x*/
-.fa-solid {
-  position: fixed;
-  left: -50%;
+.nav__icon {
+  visibility: hidden;
   z-index: 9999;
+  position: absolute;
 }
 
 body {
@@ -239,11 +239,6 @@ main {
   background-color: var(--tertiary-color);
 }
 
-/* escondendo icon */
-.fa-ellipsis-vertical {
-  visibility: hidden;
-}
-
 @media (max-width: 780px) {
   /* Font */
   h1 {
@@ -299,20 +294,21 @@ main {
   }
 
   /* aparecer bars */
-  .bars {
+  #bars {
     left: 1%;
     top: 1%;
+    visibility: visible;
   }
 
-  .x {
-    left: 4%;
-    top: 1%;
-    visibility: hidden;
-  }
-
-  nav[data-aberto="aberto"] {
+  [data-open="open"] {
     left: 0;
     background-color: var(--black);
+  }
+
+  [data-open="close"] {
+    position: fixed;
+    left: -50%;
+    z-index: 9999;
   }
 
   /* Carousel */
