@@ -18,10 +18,6 @@
   --white: #000000;
   --black: #ffffff;
   --second-color: #ffffff;
-
-  .post-footer-container {
-    color: var(--white);
-  }
 }
 /* Font */
 
@@ -234,7 +230,7 @@ main {
   padding: 0 1.5rem;
   display: flex;
   gap: 2rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 .post-footer-box {
