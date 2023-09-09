@@ -9,15 +9,16 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --second-color: #030328;
   --tertiary-color: #c7c7c726;
   --quartenary-color: #9a32bd;
 }
 
-.dark-mode:root {
+[data-theme="light"] {
   --white: #000000;
   --black: #ffffff;
+  --second-color: #ffffff;
 }
-
 /* Font */
 
 h1 {
@@ -40,21 +41,21 @@ p {
   font-size: 1rem;
 }
 /* Bars and x*/
-.fa-solid {
-  position: fixed;
-  left: -50%;
+.nav__icon {
+  visibility: hidden;
   z-index: 9999;
+  position: absolute;
 }
 
 body {
-  background: var(--black);
+  background: var(--second-color);
   color: var(--white);
 }
 /* Aside Menu */
 nav {
   height: 100vh;
   width: 70px;
-  background: var(--tertiary-color);
+  background: var(--second-color);
   border-right: 1px solid var(--white);
   position: fixed;
   display: flex;
@@ -94,11 +95,14 @@ nav {
 }
 
 #btnTheme {
-  background-color: var(--white);
+  background-color: var(--quartenary-color);
   color: var(--black);
   height: 31px;
   width: 30px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* container-carousel */
@@ -159,6 +163,7 @@ main {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  color: var(--quartenary-color);
 }
 
 .post-placeholder {
@@ -173,6 +178,7 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
+  color: var(--quartenary-color);
 }
 
 /* post main */
@@ -199,6 +205,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  color: var(--quartenary-color);
 }
 
 .post-main-card div {
@@ -223,6 +230,7 @@ main {
   padding: 0 1.5rem;
   display: flex;
   gap: 2rem;
+  color: var(--white);
 }
 
 .post-footer-box {
@@ -237,11 +245,6 @@ main {
   height: 25px;
   width: 25px;
   background-color: var(--tertiary-color);
-}
-
-/* escondendo icon */
-.fa-ellipsis-vertical {
-  visibility: hidden;
 }
 
 @media (max-width: 780px) {
@@ -299,20 +302,20 @@ main {
   }
 
   /* aparecer bars */
-  .bars {
+  #bars {
     left: 1%;
     top: 1%;
+    visibility: visible;
   }
 
-  .x {
-    left: 4%;
-    top: 1%;
-    visibility: hidden;
-  }
-
-  nav[data-aberto="aberto"] {
+  [data-open="open"] {
     left: 0;
-    background-color: var(--black);
+  }
+
+  [data-open="close"] {
+    position: fixed;
+    left: -50%;
+    z-index: 9999;
   }
 
   /* Carousel */

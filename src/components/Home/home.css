@@ -66,6 +66,10 @@ header div {
   justify-content: center;
 }
 
+.headerBtn {
+  justify-content: end;
+}
+
 button {
   width: 100px;
   height: 35px;
