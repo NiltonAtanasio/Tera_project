@@ -9,15 +9,20 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --second-color: #030328;
   --tertiary-color: #c7c7c726;
   --quartenary-color: #9a32bd;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
   --white: #000000;
   --black: #ffffff;
-}
+  --second-color: #ffffff;
 
+  .post-footer-container {
+    color: var(--white);
+  }
+}
 /* Font */
 
 h1 {
@@ -47,14 +52,14 @@ p {
 }
 
 body {
-  background: var(--black);
+  background: var(--second-color);
   color: var(--white);
 }
 /* Aside Menu */
 nav {
   height: 100vh;
   width: 70px;
-  background: var(--tertiary-color);
+  background: var(--second-color);
   border-right: 1px solid var(--white);
   position: fixed;
   display: flex;
@@ -94,7 +99,7 @@ nav {
 }
 
 #btnTheme {
-  background-color: var(--white);
+  background-color: var(--quartenary-color);
   color: var(--black);
   height: 31px;
   width: 30px;
@@ -162,6 +167,7 @@ main {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  color: var(--quartenary-color);
 }
 
 .post-placeholder {
@@ -176,6 +182,7 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
+  color: var(--quartenary-color);
 }
 
 /* post main */
@@ -202,6 +209,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  color: var(--quartenary-color);
 }
 
 .post-main-card div {
@@ -226,6 +234,7 @@ main {
   padding: 0 1.5rem;
   display: flex;
   gap: 2rem;
+  color: var(--black);
 }
 
 .post-footer-box {
@@ -305,7 +314,6 @@ main {
 
   [data-open="open"] {
     left: 0;
-    background-color: var(--black);
   }
 
   [data-open="close"] {
