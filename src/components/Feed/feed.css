@@ -13,7 +13,7 @@
   --quartenary-color: #9a32bd;
 }
 
-.dark-mode:root {
+[data-theme="dark"] {
   --white: #000000;
   --black: #ffffff;
 }
@@ -99,6 +99,9 @@ nav {
   height: 31px;
   width: 30px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* container-carousel */

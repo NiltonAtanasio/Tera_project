@@ -10,8 +10,14 @@ export default function Feed() {
   function setNav() {
     setOpenNav(!openNav);
   }
+
+  const [theme, setTheme] = useState(false);
+
+  function feedTheme() {
+    setTheme(!theme);
+  }
   return (
-    <body>
+    <body data-theme={`${theme ? "light" : "dark"}`}>
       <FontAwesomeIcon
         icon={faBars}
         id="bars"
@@ -32,7 +38,7 @@ export default function Feed() {
         </div>
 
         <div id="btnTheme">
-          <FontAwesomeIcon icon={faSun} />
+          <FontAwesomeIcon icon={faSun} onClick={feedTheme} />
         </div>
       </nav>
 
